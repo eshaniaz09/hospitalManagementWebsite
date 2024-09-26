@@ -45,7 +45,7 @@ const servicesData = [
 const Services = () => {
   return (
     <div className="w-full min-h-screen bg-cover bg-center flex flex-col items-center mt-8 justify-center" style={{ backgroundImage: 'url(/path/to/background-image.jpg)' }}>
-      <h2 className="text-5xl font-bold text-white mb-8">OUR SERVICES</h2>
+      <h2 className="text-4xl font-bold text-white mb-8">OUR SERVICES</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-10">
         {servicesData.map(service => (
           <div key={service.id} className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">

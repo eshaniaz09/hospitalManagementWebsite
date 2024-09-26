@@ -19,7 +19,7 @@ export default function Home() {
           <h1 className="text-3xl font-bold text-blue-600">LOGO</h1>
         </div>
 
-        <nav className="text-white flex flex-wrap text-lg gap-4 md:gap-6">
+        <nav className="text-white flex flex-wrap text-base gap-2 md:gap-6">
           <div className=" cursor-pointer">ABOUT US</div>
           <div className=" cursor-pointer">SERVICES</div>
           <div className="cursor-pointer">CONTACT</div>
