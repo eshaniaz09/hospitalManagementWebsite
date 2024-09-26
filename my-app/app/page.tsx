@@ -16,7 +16,7 @@ export default function Home() {
       {/* Header Section */}
       <header className="flex w-full p-6 top-0 justify-between items-center flex-wrap">
         <div className=''>
-          <h1 className="text-3xl font-bold text-blue-600">LOGO</h1>
+          <h1 className="text-3xl mr-3 font-bold text-blue-600">LOGO</h1>
         </div>
 
         <nav className="text-white flex flex-wrap text-base gap-2 md:gap-6">
