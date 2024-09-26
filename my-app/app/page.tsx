@@ -15,7 +15,7 @@ export default function Home() {
 
       {/* Header Section */}
       <header className="flex w-full p-6 top-0 justify-between items-center flex-wrap">
-        <div>
+        <div className=''>
           <h1 className="text-3xl font-bold text-blue-600">LOGO</h1>
         </div>
 
