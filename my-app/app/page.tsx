@@ -6,7 +6,7 @@ import Services from './components/services'
 
 export default function Home() {
   return (
-    <div className="flex flex-col overflow-hidden justify-center items-center gap-16">
+    <div className="flex flex-col overflow-hidden justify-center items-center ">
       <Head>
         <title>AI Chatbot</title>
         <meta name="description" content="Generated description for AI Chatbot" />
@@ -14,12 +14,12 @@ export default function Home() {
       </Head>
 
       {/* Header Section */}
-      <header className="flex w-full p-6 top-0 justify-between items-center flex-wrap">
+      <header className="flex w-full px-6 py-4 top-0 justify-between items-center flex-wrap">
         <div className=''>
-          <h1 className="text-3xl mr-3 font-bold text-blue-600">LOGO</h1>
+          <h1 className="text-3xl font-bold text-blue-600">LOGO</h1>
         </div>
 
-        <nav className="text-white flex flex-wrap text-base gap-2 md:gap-6">
+        <nav className="text-white flex font-semibold flex-wrap text-base gap-2 md:gap-6">
           <div className=" cursor-pointer">ABOUT US</div>
           <div className=" cursor-pointer">SERVICES</div>
           <div className="cursor-pointer">CONTACT</div>
@@ -34,15 +34,18 @@ export default function Home() {
       </header>
 
       {/* Main Section */}
-      <main className="flex flex-col items-center  text-center justify-center w-full h-full px-4 py-16">
+      <main className="flex flex-col items-center  text-center justify-center w-full h-full px-4 py-16" style={{ backgroundImage: 'url(/hospitalBG.jpg)', backgroundSize: 'cover', // Make the background image cover the entire width
+    backgroundPosition: 'center', // Center the image
+    height: '90vh', // Set height to 90% of the viewport height
+    width: '100vw', }}>
         <div className="max-w-screen-xl w-full gap-2 flex flex-col">
           {/* Title */}
-          <h1 className="text-4xl md:text-7xl font-bold text-white">
+          <h1 className="text-4xl md:text-7xl font-bold text-blue-800">
             Empower Your Studies with <br /> AI Chatbot
           </h1>
 
           {/* Subtitle */}
-          <p className="text-base md:text-lg text-gray-100 mt-4">
+          <p className="text-base md:text-lg text-blue-500 mt-4">
             Get instant answers and personalized study recommendations with our AI-powered research and study chatbot.
           </p>
 
