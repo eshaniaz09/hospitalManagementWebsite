@@ -31,7 +31,7 @@ const Contact = () => {
       <div className='flex flex-col gap-5 lg:w-1/2'>
         <h3 className="font-bold text-white mb-4">Get in Touch</h3>
         <h2 className="text-6xl font-bold text-white mb-6">
-          <span className='text-purple-700'>Convey Your</span> <br /> Ideas to Us
+          <span className='text-blue-800 '>Convey Your</span> <br /> Ideas to Us
         </h2>
         <p className='text-white text-lg'>
           Contact us for questions, technical assistance, or collaboration opportunities via the contact information provided.
@@ -87,7 +87,7 @@ const Contact = () => {
         <button
           type="submit"
           className={`font-bold py-2 px-4 rounded-md transition-colors ${
-            isSubmitted ? 'bg-green-500' : 'bg-purple-700 hover:bg-purple-500'
+            isSubmitted ? 'bg-green-500' : 'bg-blue-800 hover:bg-blue-500'
           } text-white`}
         >
           {isSubmitted ? 'Submitted' : 'SUBMIT NOW'}

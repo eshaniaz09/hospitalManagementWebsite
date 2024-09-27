@@ -1,8 +1,12 @@
 import Head from 'next/head';
 import Chatbot from './components/chatbotBox';
-import Footer from './components/footer';
 import Contact from './components/contact';
 import Services from './components/services'
+
+export const metadata = {
+  title: 'DeltaDev-hospital',
+  description: 'Welcome to the Hospital Management System',
+};
 
 export default function Home() {
   return (
@@ -13,48 +17,27 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* Header Section */}
-      <header className="flex w-full px-6 py-4 top-0 justify-between items-center flex-wrap">
-        <div className=''>
-          <h1 className="text-3xl font-bold text-blue-600">LOGO</h1>
-        </div>
 
-        <nav className="text-white flex font-semibold flex-wrap text-base gap-2 md:gap-6">
-          <div className=" cursor-pointer">ABOUT US</div>
-          <div className=" cursor-pointer">SERVICES</div>
-          <div className="cursor-pointer">CONTACT</div>
-          <div className=" cursor-pointer"><a href="#more">MORE</a></div>
-        </nav>
-
-        <div className="mt-4 md:mt-0">
-          <button className="rounded-full px-4 py-1 text-lg md:text-xl bg-blue-200 hover:bg-blue-700 hover:text-white text-blue-800">
-            Sign in
-          </button>
-        </div>
-      </header>
 
       {/* Main Section */}
       <main className="flex flex-col items-center  text-center justify-center w-full h-full px-4 py-16" style={{ backgroundImage: 'url(/hospitalBG.jpg)', backgroundSize: 'cover', // Make the background image cover the entire width
-    backgroundPosition: 'center', // Center the image
-    height: '90vh', // Set height to 90% of the viewport height
+    backgroundPosition: 'center', 
+    height: '90vh', 
     width: '100vw', }}>
         <div className="max-w-screen-xl w-full gap-2 flex flex-col">
-          {/* Title */}
           <h1 className="text-4xl md:text-7xl font-bold text-blue-800">
             Empower Your Studies with <br /> AI Chatbot
           </h1>
 
-          {/* Subtitle */}
           <p className="text-base md:text-lg text-blue-500 mt-4">
             Get instant answers and personalized study recommendations with our AI-powered research and study chatbot.
           </p>
 
-          {/* Action Buttons */}
           <div className="flex flex-wrap gap-4 text-center justify-center items-center mt-4">
             <button className="bg-blue-200 hover:bg-blue-700 hover:text-white text-blue-800 font-bold py-2 px-4 rounded-full">
               Learn More
             </button>
-            <button className="bg-purple-700 hover:bg-purple-500 text-white font-bold py-2 px-4 rounded-full">
+            <button className="bg-blue-800 hover:bg-blue-300 hover:text-blue-800 text-white font-bold py-2 px-4 rounded-full">
               Sign Up
             </button>
           </div>
@@ -64,7 +47,6 @@ export default function Home() {
       </main>
       <Services/>
       <Contact />
-      <Footer />
     </div>
   );
 }
